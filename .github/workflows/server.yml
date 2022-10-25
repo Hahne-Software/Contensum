@@ -2,10 +2,14 @@ name: Build and deploy server
 
 on:
   push:
-    paths: 'server/**'
+    paths:
+      - 'server/**'
+      - ".github/workflows/**"
     branches: [ "main" ]
   pull_request:
-    paths: 'server/**'
+    paths:
+      - 'server/**'
+      - ".github/workflows/**"
     branches: [ "main" ]
 
 env:
