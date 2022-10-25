@@ -2,14 +2,13 @@ name: Build and deploy client
 
 on:
   push:
-    paths: 'client'
+    paths:
+      - 'client/**'
     branches: [ "main" ]
   pull_request:
-    paths: 'client'
+    paths:
+      - 'client/**'
     branches: [ "main" ]
-
-env:
-  CARGO_TERM_COLOR: always
 
 jobs:
   build:
